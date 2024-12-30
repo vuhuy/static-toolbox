@@ -13,8 +13,6 @@ apk add \
     libtool \
     qemu-arm \
     qemu-aarch64 \
-    qemu-ppc \
-    qemu-ppc64 \
     file \
     texinfo \
     zip \
