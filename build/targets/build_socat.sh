@@ -18,6 +18,8 @@ build_socat() {
     fetch "http://repo.or.cz/socat.git" "${BUILD_DIRECTORY}/socat" git
     cd "${BUILD_DIRECTORY}/socat"
     git clean -fdx
+    git fetch --tags
+    git checkout tags/tag-1.8.0.2 -b tmpbranch
     autoconf
     CFLAGS="${GCC_OPTS}" \
         CXXFLAGS="${GXX_OPTS}" \
